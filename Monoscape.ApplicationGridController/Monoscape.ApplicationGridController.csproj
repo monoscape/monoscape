@@ -84,7 +84,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="ClassDiagram.cd" />
     <None Include="Database\ApplicationGrid.s3db" />
     <None Include="PersistentStorage\PersistentDataContextModel.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>

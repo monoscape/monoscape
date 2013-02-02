@@ -1,0 +1,39 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Global.asax.cs">
+    <Files>
+      <File FileName="Views/ApplicationGrid/Index.aspx" Line="22" Column="63" />
+      <File FileName="Runtime/Database.cs" Line="11" Column="17" />
+      <File FileName="Controllers/ApplicationGridController.cs" Line="10" Column="61" />
+      <File FileName="Views/ApplicationGrid/UploadApplication.aspx" Line="1" Column="1" />
+      <File FileName="Content/Site.css" Line="314" Column="2" />
+      <File FileName="Runtime/EndPoints.cs" Line="1" Column="61" />
+      <File FileName="Global.asax" Line="1" Column="1" />
+      <File FileName="Global.asax.cs" Line="30" Column="57" />
+      <File FileName="Web.config" Line="10" Column="16" />
+      <File FileName="Views/LoadBalancer/RequestHistory.aspx" Line="1" Column="1" />
+      <File FileName="Views/LoadBalancer/RequestTable.ascx" Line="39" Column="14" />
+      <File FileName="Controllers/CloudControllerController.cs" Line="81" Column="52" />
+      <File FileName="Views/CloudController/leftmenu.ascx" Line="7" Column="48" />
+      <File FileName="Views/CloudController/Index.aspx" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" selected="True">
+          <Node name="Monoscape.Dashboard" expanded="True">
+            <Node name="Content" expanded="True" />
+            <Node name="Controllers" expanded="True" />
+            <Node name="Views" expanded="True">
+              <Node name="CloudController" expanded="True" />
+            </Node>
+            <Node name="Global.asax" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="main" EntityNamespace="Monoscape.CloudController.PersistenceStorage" ContextNamespace="Monoscape.CloudController.PersistenceStorage" Class="Main" BaseType="DbLinq.Data.Linq.DataContext" Provider="SQLite" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007" />

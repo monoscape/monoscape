@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{367F0169-DF6D-4C62-AFC0-F92D1FB5A058}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Monoscape.LoadBalancerController</RootNamespace>
+    <AssemblyName>Monoscape.LoadBalancerController</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestQueue.cs" />
+    <Compile Include="RoutingMesh.cs" />
+    <Compile Include="Runtime\Database.cs" />
+    <Compile Include="Runtime\Initializer.cs" />
+    <Compile Include="Runtime\Settings.cs" />
+    <Compile Include="Services\ApplicationGrid\LbApplicationGridService.cs" />
+    <Compile Include="Services\Dashboard\LbDashboardService.cs" />
+    <Compile Include="Services\LoadBalancerWeb\LbLoadBalancerWebService.cs" />
+    <Compile Include="ControllerService.cs" />
+    <Compile Include="ControllerMain.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Monoscape.ApplicationGridController.Api\Monoscape.ApplicationGridController.Api.csproj">
+      <Project>{51C89D63-FF6B-4B86-A545-19F4713D5C99}</Project>
+      <Name>Monoscape.ApplicationGridController.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">
+      <Project>{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}</Project>
+      <Name>Monoscape.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Monoscape.LoadBalancerController.Api\Monoscape.LoadBalancerController.Api.csproj">
+      <Project>{B8DC68C8-E6D1-4F3F-81A5-AB67B7EDB0F3}</Project>
+      <Name>Monoscape.LoadBalancerController.Api</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

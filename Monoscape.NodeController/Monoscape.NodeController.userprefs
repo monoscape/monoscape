@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Monoscape.ApplicationGridController.Api/Services/NodeController/IApNodeControllerService.cs">
+    <Files>
+      <File FileName="Services/ApplicationGrid/NcApplicationGridService.cs" Line="330" Column="22" />
+      <File FileName="ControllerService.cs" Line="85" Column="5" />
+      <File FileName="../Monoscape.ApplicationGridController.Api/Services/NodeController/IApNodeControllerService.cs" Line="1" Column="1" />
+      <File FileName="../Monoscape.NodeController.Api/Services/ApplicationGrid/INcApplicationGridService.cs" Line="10" Column="11" />
+      <File FileName="ControllerMain.cs" Line="31" Column="39" />
+      <File FileName="ControllerUtil.cs" Line="35" Column="48" />
+      <File FileName="../Monoscape.NodeController.Api/Sockets/NcFileTransferSocket.cs" Line="1" Column="1" />
+      <File FileName="../Monoscape.ApplicationGridController.Api/Services/Dashboard/IApDashboardService.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

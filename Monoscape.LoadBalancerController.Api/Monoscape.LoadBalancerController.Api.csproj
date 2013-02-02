@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8DC68C8-E6D1-4F3F-81A5-AB67B7EDB0F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Monoscape.LoadBalancerController.Api</RootNamespace>
+    <AssemblyName>Monoscape.LoadBalancerController.Api</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoadBalancerControllerUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ApplicationGrid\ILbApplicationGridService.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbAddApplicationInstancesRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbAddApplicationInstancesResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbGetApplicationScaleRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbGetApplicationScaleResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbGetRequestQueueRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbGetRequestQueueResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbGetApplicationInstancesRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbGetApplicationInstancesResponse.cs" />
+    <Compile Include="Services\Dashboard\Model\LbGetRequestQueueRequest.cs" />
+    <Compile Include="Services\Dashboard\Model\LbGetRequestQueueResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbRemoveApplicationInstanceResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\LbRemoveApplicationInstanceRequest.cs" />
+    <Compile Include="Services\Dashboard\ILbDashboardService.cs" />
+    <Compile Include="Services\Dashboard\Model\LbGetRoutingMeshHistoryRequest.cs" />
+    <Compile Include="Services\Dashboard\Model\LbGetRoutingMeshHistoryResponse.cs" />
+    <Compile Include="Services\LoadBalancerWeb\ILbLoadBalancerWebService.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbGetRequestCountRequest.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbGetRequestCountResponse.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbDecrementRequestCountRequest.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbDecrementRequestCountResponse.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbIncrementRequestCountRequest.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbIncrementRequestCountResponse.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbRemoveRequestFromQueueResponse.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbRemoveRequestFromQueueRequest.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbAddRequestToQueueResponse.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbAddRequestToQueueRequest.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbGetRoutingMeshRequest.cs" />
+    <Compile Include="Services\LoadBalancerWeb\Model\LbGetRoutingMeshResponse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">
+      <Project>{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}</Project>
+      <Name>Monoscape.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

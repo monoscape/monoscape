@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="main" EntityNamespace="Monoscape.ApplicationGrid.PersistentStorage" ContextNamespace="Monoscape.ApplicationGrid.PersistentStorage" Class="Main" BaseType="DbLinq.Data.Linq.DataContext" Provider="SQLite" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="main.Application" Member="Application">
+    <Type Name="Application">
+      <Association Name="fk_Tenant_0" Member="Tenant" Storage="_tenant" Type="Tenant" ThisKey="ID" OtherKey="ApplicationID" DeleteRule="NO ACTION" />
+      <Column Name="FilePath" Member="FilePath" Storage="_filePath" Type="System.String" DbType="VARCHAR(2000)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Id" Member="ID" Storage="_id" Type="System.Int32" DbType="INTEGER" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Member="Name" Storage="_name" Type="System.String" DbType="NVARCHAR(1000)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="State" Member="State" Storage="_state" Type="System.String" DbType="NVARCHAR(100)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="Version" Member="Version" Storage="_version" Type="System.String" DbType="NVARCHAR(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="main.Tenant" Member="Tenant">
+    <Type Name="Tenant">
+      <Association Name="fk_Tenant_0" Member="Application" Storage="_application" Type="Application" ThisKey="ApplicationID" OtherKey="ID" IsForeignKey="true" />
+      <Column Name="ApplicationId" Member="ApplicationID" Storage="_applicationID" Type="System.Int32" DbType="INTEGER" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="Id" Member="ID" Storage="_id" Type="System.Int32" DbType="INTEGER" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Member="Name" Storage="_name" Type="System.String" DbType="NVARCHAR(200)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="ScalingFactor" Member="ScalingFactor" Storage="_scalingFactor" Type="System.Int32" DbType="INTEGER" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="UpperScaleLimit" Member="UpperScaleLimit" Storage="_upperScaleLimit" Type="System.Int32" DbType="INTEGER" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

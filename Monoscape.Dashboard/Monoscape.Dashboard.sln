@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.Common", "..\Monoscape.Common\Monoscape.Common.csproj", "{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.Dashboard", "Monoscape.Dashboard.csproj", "{5E3C6917-2030-4712-A04D-068A93E396DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.ApplicationGridController.Api", "..\Monoscape.ApplicationGridController.Api\Monoscape.ApplicationGridController.Api.csproj", "{51C89D63-FF6B-4B86-A545-19F4713D5C99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.LoadBalancerController.Api", "..\Monoscape.LoadBalancerController.Api\Monoscape.LoadBalancerController.Api.csproj", "{B8DC68C8-E6D1-4F3F-81A5-AB67B7EDB0F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.CloudController.Api", "..\Monoscape.CloudController.Api\Monoscape.CloudController.Api.csproj", "{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E3C6917-2030-4712-A04D-068A93E396DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3C6917-2030-4712-A04D-068A93E396DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3C6917-2030-4712-A04D-068A93E396DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3C6917-2030-4712-A04D-068A93E396DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C89D63-FF6B-4B86-A545-19F4713D5C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C89D63-FF6B-4B86-A545-19F4713D5C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C89D63-FF6B-4B86-A545-19F4713D5C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C89D63-FF6B-4B86-A545-19F4713D5C99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8DC68C8-E6D1-4F3F-81A5-AB67B7EDB0F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DC68C8-E6D1-4F3F-81A5-AB67B7EDB0F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DC68C8-E6D1-4F3F-81A5-AB67B7EDB0F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DC68C8-E6D1-4F3F-81A5-AB67B7EDB0F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Monoscape.Dashboard.csproj
+	EndGlobalSection
+EndGlobal

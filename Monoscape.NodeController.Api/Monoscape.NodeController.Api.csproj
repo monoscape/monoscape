@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95534FAC-7228-4FCF-B933-50B3756A95DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Monoscape.NodeController.Api</RootNamespace>
+    <AssemblyName>Monoscape.NodeController.Api</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ApplicationGrid\INcApplicationGridService.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcAddApplicationRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcAddApplicationResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcApplicationExistsResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcApplicationExistsRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcDeployApplicationRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcDeployApplicationResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcDescribeApplicationsRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcDescribeApplicationsResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcStartApplicationInstancesRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcStartApplicationInstancesResponse.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcStopApplicationRequest.cs" />
+    <Compile Include="Services\ApplicationGrid\Model\NcStopApplicationResponse.cs" />
+    <Compile Include="Sockets\NcFileTransferSocket.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">
+      <Project>{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}</Project>
+      <Name>Monoscape.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

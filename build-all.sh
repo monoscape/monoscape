@@ -1,0 +1,12 @@
+xbuild Monoscape.Common/Monoscape.Common.sln
+xbuild Monoscape.ApplicationGridController/Monoscape.ApplicationGridController.sln
+xbuild Monoscape.ApplicationGridController.Api/Monoscape.ApplicationGridController.Api.sln
+xbuild Monoscape.CloudController/Monoscape.CloudController.sln
+xbuild Monoscape.CloudController.Api/Monoscape.CloudController.Api.sln
+xbuild Monoscape.CloudController.External.Api/Monoscape.CloudController.External.Api.sln
+xbuild Monoscape.LoadBalancerController/Monoscape.LoadBalancerController.sln
+xbuild Monoscape.LoadBalancerController.Api/Monoscape.LoadBalancerController.Api.sln
+xbuild Monoscape.LoadBalancerController.Web/Monoscape.LoadBalancerController.Web.sln
+xbuild Monoscape.NodeController/Monoscape.NodeController.sln
+xbuild Monoscape.NodeController.Api/Monoscape.NodeController.Api.sln
+xbuild Monoscape.Dashboard/Monoscape.Dashboard.sln

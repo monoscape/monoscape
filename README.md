@@ -11,11 +11,13 @@ Installation
 5. Start Monoscape Load Balancer using start-load-balancer.sh shell script.
 6. Start Monoscape Application Grid using start-application-grid.sh shell script.
 7. Start Monoscape Dashboard using start-dashboard.sh shell script.
-8. Login to Monoscape Dashboard using http://<host-ip>:8080 and verify IaaS authentication status.
+8. Login to Monoscape Dashboard using http://host-ip:8080 and verify IaaS authentication status.
 9. Create a new key for a EC2 image of Ubuntu 12.04 server and start an instance.
 10. Copy Monoscape Node Controller to the above VM instance.
 11. Update Monoscape Node Controller configuration file with the IP address of the application grid.
 12. Export the above instance of the VM and import it to the IaaS using the same key.
+13. Login to Monoscape Dashboard and upload Mono applications to be deployed in the PaaS.
+14. Start an application and do a sanity test to see whether its is working.
 
 Applications Supported
 -----------------------

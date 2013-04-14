@@ -2,6 +2,18 @@ Monoscape
 ==========
 Monoscape is an open source, Mono/.NET Platform as a Service (PaaS) Cloud solution. It has a complete software stack for deploying and managing applications in the cloud with automatic load balancing and scaling features.
 
+Installation
+-------------
+1. Select an IaaS of your choice which supports EC2 API. Monoscape would recommend OpenStack.
+2. Install an instance of the IaaS and create a new user account for monoscape to access the EC2 API.
+3. Find EC2 authentication details (secret key and access key) for the above user from the IaaS dashboard. 
+4. Update Monoscape Application Grid Controller configuraiton file with the above information.
+5. Start Monoscape Load Balancer using start-load-balancer.sh shell script.
+6. Start Monoscape Application Grid using start-application-grid.sh shell script.
+7. Start Monoscape Dashboard using start-dashboard.sh shell script.
+8. Login to Monoscape Dashboard using http://<host-ip>:8080 and verify IaaS authentication status.
+9. Create a new key for a EC2 image of Ubuntu 12.04 server and start an instance.
+10. Copy Monoscape Node Controller to the above VM instance.
 
 Applications Supported
 -----------------------

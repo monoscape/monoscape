@@ -1,6 +1,6 @@
 Monoscape
 ==========
-Monoscape is an open source, Mono/.NET Platform as a Service (PaaS) Cloud solution. It has a complete software stack for deploying and managing applications in the cloud with automatic load balancing and scaling features.
+Monoscape is an open source, Mono Platform as a Service (PaaS) Cloud solution. It has a complete software stack for deploying and managing applications in the cloud with automatic load balancing and scaling features.
 
 Installation
 -------------
@@ -21,7 +21,7 @@ Installation
 
 Applications Supported
 -----------------------
-As the name implies it supports applications written in Mono and .NET.
+As the name implies it supports applications written in Mono.
 
 
 Managing & Monitoring the Cloud
@@ -36,7 +36,7 @@ Applications could be deployed to the cloud via the Monoscape web interface.
 
 Web Servers Used
 -----------------
-Currently Monoscape uses Mono XSP web server (http://en.wikipedia.org/wiki/XSP_(software)), however support for more web servers which could run Mono/.NET applications will be added in the future.
+Currently Monoscape uses Mono XSP web server (http://en.wikipedia.org/wiki/XSP_(software)), however support for more web servers which could run Mono applications will be added in the future.
 
 
 IaaS Platforms Supported

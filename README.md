@@ -14,6 +14,8 @@ Installation
 8. Login to Monoscape Dashboard using http://<host-ip>:8080 and verify IaaS authentication status.
 9. Create a new key for a EC2 image of Ubuntu 12.04 server and start an instance.
 10. Copy Monoscape Node Controller to the above VM instance.
+11. Update Monoscape Node Controller configuration file with the IP address of the application grid.
+12. Export the above instance of the VM and import it to the IaaS using the same key.
 
 Applications Supported
 -----------------------

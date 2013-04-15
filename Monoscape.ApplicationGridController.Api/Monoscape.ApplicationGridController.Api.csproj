@@ -102,12 +102,6 @@
     <Compile Include="Sockets\ApFileTransferSocket.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">
-      <Project>{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}</Project>
-      <Name>Monoscape.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup />
@@ -120,4 +114,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">
+      <Project>{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}</Project>
+      <Name>Monoscape.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

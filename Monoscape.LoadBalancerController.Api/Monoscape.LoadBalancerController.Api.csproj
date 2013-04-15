@@ -74,12 +74,6 @@
     <Compile Include="Services\LoadBalancerWeb\Model\LbGetRoutingMeshRequest.cs" />
     <Compile Include="Services\LoadBalancerWeb\Model\LbGetRoutingMeshResponse.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">
-      <Project>{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}</Project>
-      <Name>Monoscape.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -89,4 +83,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">
+      <Project>{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}</Project>
+      <Name>Monoscape.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

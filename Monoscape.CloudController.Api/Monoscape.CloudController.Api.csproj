@@ -55,12 +55,6 @@
     <Compile Include="Services\Dashboard\Model\CcGetSubscriptionResponse.cs" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">
-      <Project>{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}</Project>
-      <Name>Monoscape.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -69,4 +63,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">
+      <Project>{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}</Project>
+      <Name>Monoscape.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

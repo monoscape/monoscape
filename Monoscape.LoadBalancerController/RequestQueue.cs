@@ -25,7 +25,7 @@ using Monoscape.Common.Model;
 
 namespace Monoscape.LoadBalancerController
 {
-    internal class RequestQueue : List<ApplicationRequest>
+    internal class RequestQueue : List<ApplicationHttpRequest>
     {
     }
 }

@@ -43,7 +43,7 @@ namespace Monoscape.Dashboard.Controllers
                 LbGetRequestQueueRequest request = new LbGetRequestQueueRequest(Settings.Credentials);
                 request.RequestType = RequestType.RequestQueue;
                 LbGetRequestQueueResponse response = EndPoints.LbDashboardService.GetRequestQueue(request);
-                List<ApplicationRequest> list = new List<ApplicationRequest>();
+                var list = new List<ApplicationHttpRequest>();
                 if (response.RequestQueue != null)
                     list.AddRange(response.RequestQueue);
                 return View(list);
@@ -61,7 +61,7 @@ namespace Monoscape.Dashboard.Controllers
                 LbGetRequestQueueRequest request = new LbGetRequestQueueRequest(Settings.Credentials);
                 request.RequestType = RequestType.AllRequests;
                 LbGetRequestQueueResponse response = EndPoints.LbDashboardService.GetRequestQueue(request);
-                List<ApplicationRequest> list = new List<ApplicationRequest>();
+                var list = new List<ApplicationHttpRequest>();
                 if (response.RequestQueue != null)
                     list.AddRange(response.RequestQueue);
                 return View(list);

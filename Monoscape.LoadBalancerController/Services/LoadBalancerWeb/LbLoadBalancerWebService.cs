@@ -109,7 +109,7 @@ namespace Monoscape.LoadBalancerController.Services.LoadBalancerWeb
 
                 Authenticate(request);
                 LbRemoveRequestFromQueueResponse response = new LbRemoveRequestFromQueueResponse();
-                ApplicationRequest req = Database.GetInstance().RequestQueue.Find(x => x.Id == request.RequestId);
+                var req = Database.GetInstance().RequestQueue.Find(x => x.Id == request.RequestId);
                 if (req != null)
                 {
                     Database.GetInstance().RequestQueue.Remove(req);

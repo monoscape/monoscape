@@ -57,6 +57,8 @@
     <Compile Include="ControllerService.cs" />
     <Compile Include="ControllerMain.cs" />
     <Compile Include="ControllerUtil.cs" />
+    <Compile Include="MonoCartridge.cs" />
+    <Compile Include="NodeCartridgeFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

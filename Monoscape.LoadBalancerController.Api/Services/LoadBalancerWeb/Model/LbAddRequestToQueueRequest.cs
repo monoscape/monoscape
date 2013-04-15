@@ -30,7 +30,7 @@ namespace Monoscape.LoadBalancerController.Api.Services.LoadBalancerWeb.Model
     public class LbAddRequestToQueueRequest : AbstractRequest
     {
         [DataMember]
-        public ApplicationRequest ApplicationRequest { get; set; }
+        public ApplicationHttpRequest ApplicationRequest { get; set; }
 
         public LbAddRequestToQueueRequest(MonoscapeCredentials credentials)
             : base(credentials)

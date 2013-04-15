@@ -28,9 +28,9 @@ namespace Monoscape.LoadBalancerController.Api
 {
     public static class LoadBalancerControllerUtil
     {
-        public static ApplicationRequest ConvertRequest(HttpRequest httpRequest, int nodeId, int applicationId, int instanceId, int tenantId)
+        public static ApplicationHttpRequest ConvertRequest(HttpRequest httpRequest, int nodeId, int applicationId, int instanceId, int tenantId)
         {
-            ApplicationRequest request = new ApplicationRequest();
+            ApplicationHttpRequest request = new ApplicationHttpRequest();
             request.Time = DateTime.Now;
             request.RawUrl = httpRequest.RawUrl;
             request.RequestType = httpRequest.RequestType;

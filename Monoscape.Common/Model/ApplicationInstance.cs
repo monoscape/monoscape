@@ -25,19 +25,19 @@ using System.Runtime.Serialization;
 
 namespace Monoscape.Common.Model
 {
-	[DataContract]
+    [DataContract]
     public class ApplicationInstance : Entity, IComparable
     {
-		[DataMember]
+	[DataMember]
         public int ApplicationId { get; set; }
 
         [DataMember]
         public string ApplicationName { get; set; }
 		
-		[DataMember]
+	[DataMember]
         public int NodeId { get; set; }
 		
-		[DataMember]
+	[DataMember]
         public int ProcessId { get; set; }
 
         [DataMember]

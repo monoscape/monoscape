@@ -27,10 +27,10 @@ using Monoscape.Common.Model;
 namespace Monoscape.NodeController.Api.Services.ApplicationGrid.Model
 {
     [DataContract]
-    public class NcAddApplicationRequest : AbstractRequest
+    public class NcAddApplicationRequest : AbstractApplicationRequest
     {
         [DataMember]
-        public Application Application { get; set; }
+        public Application Application { get; set; }	
 
         public NcAddApplicationRequest(MonoscapeCredentials credentials)
             : base(credentials)

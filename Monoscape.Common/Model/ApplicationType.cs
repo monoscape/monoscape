@@ -14,27 +14,16 @@
  *  limitations under the License.
  *
  *  History: 
- *  2011/11/10 Imesh Gunaratne <imesh@monoscape.org> Created.
+ *  2011/04/15 Imesh Gunaratne <imesh@monoscape.org> Created.
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Monoscape.Common.Model;
-using System.Runtime.Serialization;
 
-namespace Monoscape.NodeController.Api.Services.ApplicationGrid.Model
+namespace Monoscape.Common
 {
-    [DataContract]
-    public class NcApplicationExistsRequest : AbstractApplicationRequest
+    public enum ApplicationType
     {
-        [DataMember]
-        public int ApplicationId { get; set; }
-
-        public NcApplicationExistsRequest(MonoscapeCredentials credentials)
-            : base(credentials)
-		{
-		}
+        Mono,
+        JavaWeb
     }
 }

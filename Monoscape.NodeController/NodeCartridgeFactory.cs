@@ -14,27 +14,28 @@
  *  limitations under the License.
  *
  *  History: 
- *  2011/11/10 Imesh Gunaratne <imesh@monoscape.org> Created.
+ *  2013/04/15 Imesh Gunaratne <imesh@monoscape.org> Created.
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using Monoscape.NodeController.Api;
 using Monoscape.Common.Model;
-using System.Runtime.Serialization;
+using Monoscape.Common;
+using Monoscape.Common.Exceptions;
 
-namespace Monoscape.NodeController.Api.Services.ApplicationGrid.Model
+namespace Monoscape.NodeController
 {
-    [DataContract]
-    public class NcApplicationExistsRequest : AbstractApplicationRequest
-    {
-        [DataMember]
-        public int ApplicationId { get; set; }
-
-        public NcApplicationExistsRequest(MonoscapeCredentials credentials)
-            : base(credentials)
-		{
+	public static class NodeCartridgeFactory
+	{
+		public static INodeCartridge GetHandler (ApplicationType applicationType)
+        {
+            switch (applicationType) {
+                case ApplicationType.Mono:
+                    return new MonoCartridge ();
+                default:
+                    throw new MonoscapeException("Unknown application type found");
+            }
 		}
-    }
+	}
 }
+

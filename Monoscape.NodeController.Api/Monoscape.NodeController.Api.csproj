@@ -56,6 +56,7 @@
     <Compile Include="Services\ApplicationGrid\Model\NcStopApplicationRequest.cs" />
     <Compile Include="Services\ApplicationGrid\Model\NcStopApplicationResponse.cs" />
     <Compile Include="Sockets\NcFileTransferSocket.cs" />
+    <Compile Include="INodeCartridge.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Monoscape.Common\Monoscape.Common.csproj">

@@ -30,6 +30,6 @@ namespace Monoscape.LoadBalancerController.Api.Services.Dashboard.Model
     public class LbGetRequestQueueResponse : AbstractResponse
     {
         [DataMember]
-        public List<ApplicationRequest> RequestQueue { get; set; }
+        public List<ApplicationHttpRequest> RequestQueue { get; set; }
     }
 }

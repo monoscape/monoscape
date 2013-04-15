@@ -79,8 +79,6 @@
     <Compile Include="Model\ApplicationInstance.cs" />
     <Compile Include="Model\ApplicationState.cs" />
     <Compile Include="Model\FileBlock.cs" />
-    <Compile Include="Model\IaasClientTypes.cs" />
-    <Compile Include="Model\ApplicationRequest.cs" />
     <Compile Include="Model\InstanceRequest.cs" />
     <Compile Include="Model\LoadBalancerSettings.cs" />
     <Compile Include="Model\MonoscapeCredentials.cs" />
@@ -116,6 +114,10 @@
     <Compile Include="SharpZip.cs" />
     <Compile Include="Sockets\FileServer\AbstractFileReceiveSocket.cs" />
     <Compile Include="Sockets\FileServer\AbstractFileTransferSocket.cs" />
+    <Compile Include="Model\ApplicationType.cs" />
+    <Compile Include="Model\IaasClientType.cs" />
+    <Compile Include="Model\ApplicationHttpRequest.cs" />
+    <Compile Include="Model\AbstractApplicationRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Lib\Log4net\log4net.dll" />

@@ -67,7 +67,7 @@ namespace Monoscape.ApplicationGridController.Scaling
             Log.Info(this, "Scaling Manager stopped");
         }
 
-        private void ScaleApplications(List<ApplicationRequest> requestQueue)
+        private void ScaleApplications(List<ApplicationHttpRequest> requestQueue)
         {
             if ((requestQueue == null) || (requestQueue.Count == 0))
             {
@@ -97,7 +97,7 @@ namespace Monoscape.ApplicationGridController.Scaling
             }
             else
             {
-                foreach (ApplicationRequest request in requestQueue)
+                foreach (ApplicationHttpRequest request in requestQueue)
                 {
                     Application app = Database.GetInstance().Applications.Find(x => x.Id == request.ApplicationId);
                     if (app != null)
@@ -160,7 +160,7 @@ namespace Monoscape.ApplicationGridController.Scaling
             }
         }
 
-        private static void AddScalingHistory(ApplicationRequest request, int requestCount, int reqScale)
+        private static void AddScalingHistory(ApplicationHttpRequest request, int requestCount, int reqScale)
         {
             AddScalingHistory(request.ApplicationId, request.TenantId, requestCount, reqScale);
         }

@@ -18,23 +18,20 @@
  */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Monoscape.Common.Model;
 using System.Runtime.Serialization;
 
-namespace Monoscape.NodeController.Api.Services.ApplicationGrid.Model
+namespace Monoscape.Common.Model
 {
     [DataContract]
-    public class NcApplicationExistsRequest : AbstractApplicationRequest
+    public abstract class AbstractApplicationRequest : AbstractRequest
     {
-        [DataMember]
-        public int ApplicationId { get; set; }
-
-        public NcApplicationExistsRequest(MonoscapeCredentials credentials)
+        public AbstractApplicationRequest(MonoscapeCredentials credentials)
             : base(credentials)
-		{
-		}
+        {
+        }
+
+        [DataMember]
+        public ApplicationType ApplicationType { get; set; }
     }
 }
+

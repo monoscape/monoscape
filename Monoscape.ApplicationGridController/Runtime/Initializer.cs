@@ -23,6 +23,7 @@ using Monoscape.Common;
 using Monoscape.ApplicationGridController.Services.Dashboard;
 using System.Configuration;
 using System.IO;
+using Monoscape.Common.Exceptions;
 
 namespace Monoscape.ApplicationGridController.Runtime
 {
@@ -82,8 +83,8 @@ namespace Monoscape.ApplicationGridController.Runtime
 			}
 			catch(Exception e)
 			{
-				Log.Error(typeof(Initializer), "Could not connect to " + Runtime.Settings.IaasServiceURL, e);
-                // The exception is not thrown as it will terminate the start up process
+				string message = "Could not connect to " + Runtime.Settings.IaasServiceURL;
+				throw new MonoscapeException(message, e);
 			}
 		}
     }

@@ -24,7 +24,7 @@ using System.Runtime.Serialization;
 namespace Monoscape.NodeController.Api.Services.ApplicationGrid.Model
 {
 	[DataContract]
-	public class NcStopApplicationRequest : AbstractRequest
+	public class NcStopApplicationRequest : AbstractApplicationRequest
 	{
 		[DataMember]
 		public int ApplicationId { get; set; }

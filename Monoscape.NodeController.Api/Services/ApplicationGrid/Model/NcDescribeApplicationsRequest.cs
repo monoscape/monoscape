@@ -27,7 +27,7 @@ using System.Runtime.Serialization;
 namespace Monoscape.NodeController.Api.Services.ApplicationGrid.Model
 {
     [DataContract]
-    public class NcDescribeApplicationsRequest : AbstractRequest
+    public class NcDescribeApplicationsRequest : AbstractApplicationRequest
     {
         public NcDescribeApplicationsRequest(MonoscapeCredentials credentials)
             : base(credentials)

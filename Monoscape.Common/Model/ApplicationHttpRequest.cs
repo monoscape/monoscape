@@ -25,8 +25,11 @@ using System.Runtime.Serialization;
 
 namespace Monoscape.Common.Model
 {
+    /// <summary>
+    /// Provides high level properties of an application http request.
+    /// </summary>
     [DataContract]
-    public class ApplicationRequest
+    public class ApplicationHttpRequest
     {
         [DataMember]
         public int Id { get; set; }

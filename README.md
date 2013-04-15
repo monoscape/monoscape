@@ -2,12 +2,12 @@ Monoscape
 ==========
 Monoscape is an open source, Mono Platform as a Service (PaaS) Cloud solution. It has a complete software stack for deploying and managing applications in the cloud with automatic load balancing and scaling features.
 
-Software Required
-------------------
-1. Mono Runtime, Xbuild, XSP
+Prerequisites
+--------------
+You need to make sure that Mono Runtime, Mono Xbuild and Mono XSP are installed on your system.
 
-How to Install
----------------
+Installation
+-------------
 1. Select an IaaS of your choice which supports EC2 API. Monoscape would recommend OpenStack.
 2. Install an instance of the IaaS and create a new user account for monoscape to access the EC2 API.
 3. Find EC2 authentication details (secret key and access key) for the above user from the IaaS dashboard. 

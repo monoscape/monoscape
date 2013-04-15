@@ -110,7 +110,6 @@
     <Compile Include="Services\FileServer\Model\UploadApplicationResponse.cs" />
     <Compile Include="Services\FileServer\Model\UploadApplicationRequest.cs" />
     <Compile Include="WCFExtensions\ExceptionMarshallingBehavior.cs" />
-    <Compile Include="Win32.cs" />
     <Compile Include="SharpZip.cs" />
     <Compile Include="Sockets\FileServer\AbstractFileReceiveSocket.cs" />
     <Compile Include="Sockets\FileServer\AbstractFileTransferSocket.cs" />

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.Common", "..\Monoscape.Common\Monoscape.Common.csproj", "{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.CloudController", "Monoscape.CloudController.csproj", "{950319C4-4311-4690-86F6-843A3EBE3B7C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.ApplicationGridController.Api", "..\Monoscape.ApplicationGridController.Api\Monoscape.ApplicationGridController.Api.csproj", "{51C89D63-FF6B-4B86-A545-19F4713D5C99}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.CloudController.External.Api", "..\Monoscape.CloudController.External.Api\Monoscape.CloudController.External.Api.csproj", "{5C41BDFE-03EF-499D-858F-AE43D6196304}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.CloudController.Api", "..\Monoscape.CloudController.Api\Monoscape.CloudController.Api.csproj", "{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monoscape.CloudController", "Monoscape.CloudController.csproj", "{950319C4-4311-4690-86F6-843A3EBE3B7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,26 +21,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|x86.ActiveCfg = Release|Any CPU
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|x86.ActiveCfg = Debug|x86
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|x86.Build.0 = Debug|x86
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|Any CPU.ActiveCfg = Release|x86
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|Mixed Platforms.Build.0 = Release|x86
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|x86.ActiveCfg = Release|x86
-		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|x86.Build.0 = Release|x86
 		{51C89D63-FF6B-4B86-A545-19F4713D5C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{51C89D63-FF6B-4B86-A545-19F4713D5C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51C89D63-FF6B-4B86-A545-19F4713D5C99}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -61,6 +41,28 @@ Global
 		{5C41BDFE-03EF-499D-858F-AE43D6196304}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{5C41BDFE-03EF-499D-858F-AE43D6196304}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{5C41BDFE-03EF-499D-858F-AE43D6196304}.Release|x86.ActiveCfg = Release|Any CPU
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|Any CPU.Build.0 = Debug|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|x86.ActiveCfg = Debug|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Debug|x86.Build.0 = Debug|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|Any CPU.ActiveCfg = Release|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|Any CPU.Build.0 = Release|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|x86.ActiveCfg = Release|x86
+		{950319C4-4311-4690-86F6-843A3EBE3B7C}.Release|x86.Build.0 = Release|x86
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B05EC960-C8FA-40AC-8F9A-3F72CBB2D49F}.Release|x86.ActiveCfg = Release|Any CPU
 		{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -72,10 +74,10 @@ Global
 		{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{C23F96A0-2FE6-4C6A-8772-8F9BC60D00D4}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ..\Monoscape.Common\Monoscape.Common.csproj
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Monoscape.ApplicationGrid.csproj
 	EndGlobalSection
 EndGlobal

@@ -25,28 +25,21 @@ using Monoscape.Common;
 
 namespace Monoscape.LoadBalancerController
 {
-    class ControllerMain
+    class ControllerMain : IDisposable
     {
         private static ControllerService service;
 
         public static void Main(string[] args)
         {
-            if (!MonoscapeUtil.IsRunningOnMono())
-            {
-                // Subscribe to Win32 process exit event
-                Win32.HandlerRoutine hr = new Win32.HandlerRoutine(ProcessExit_Event);
-                Win32.SetConsoleCtrlHandler(hr, true);
-            }
-
             service = new ControllerService();
             service.Run();
-        }
+        }        
 
-        static Boolean ProcessExit_Event(Win32.CtrlTypes CtrlType)
+        #region IDisposable implementation
+        public void Dispose ()
         {
-            Log.Info(typeof(ControllerMain), "Closing ServiceMain process");
             service.Dispose();
-            return true;
         }
+        #endregion
     }
 }

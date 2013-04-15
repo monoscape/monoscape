@@ -2,6 +2,10 @@ Monoscape
 ==========
 Monoscape is an open source, Mono Platform as a Service (PaaS) Cloud solution. It has a complete software stack for deploying and managing applications in the cloud with automatic load balancing and scaling features.
 
+Software Required
+------------------
+1. Mono Runtime, Xbuild, XSP
+
 Installation
 -------------
 1. Select an IaaS of your choice which supports EC2 API. Monoscape would recommend OpenStack.

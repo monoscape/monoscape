@@ -6,8 +6,8 @@ Software Required
 ------------------
 1. Mono Runtime, Xbuild, XSP
 
-Installation
--------------
+How to Install
+---------------
 1. Select an IaaS of your choice which supports EC2 API. Monoscape would recommend OpenStack.
 2. Install an instance of the IaaS and create a new user account for monoscape to access the EC2 API.
 3. Find EC2 authentication details (secret key and access key) for the above user from the IaaS dashboard. 

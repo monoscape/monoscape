@@ -10,6 +10,7 @@ rm -f -r Monoscape.LoadBalancerController.Web/bin/*
 rm -f -r Monoscape.NodeController/bin/*
 rm -f -r Monoscape.NodeController.Api/bin/*
 rm -f -r Monoscape.Dashboard/bin/*
+
 rm -f -r Monoscape.Common/obj/*
 rm -f -r Monoscape.ApplicationGridController/obj/*
 rm -f -r Monoscape.ApplicationGridController.Api/obj/*

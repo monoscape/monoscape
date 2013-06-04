@@ -25,17 +25,18 @@ using Monoscape.Common.Exceptions;
 
 namespace Monoscape.NodeController
 {
-	public static class NodeCartridgeFactory
-	{
-		public static INodeCartridge GetHandler (ApplicationType applicationType)
+    public static class NodeCartridgeFactory
+    {
+        public static INodeCartridge GetHandler(ApplicationType applicationType)
         {
-            switch (applicationType) {
+            switch (applicationType)
+            {
                 case ApplicationType.Mono:
-                    return new MonoCartridge ();
+                    return new MonoCartridge();
                 default:
                     throw new MonoscapeException("Unknown application type found");
             }
-		}
-	}
+        }
+    }
 }
 

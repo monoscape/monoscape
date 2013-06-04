@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EndPoints.cs" />
+    <Compile Include="JavaApacheCartridge.cs" />
+    <Compile Include="JavaApacheCartridgeFactory.cs" />
     <Compile Include="ProcessManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Runtime\Database.cs" />

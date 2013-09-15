@@ -1,6 +1,6 @@
 Monoscape
 ==========
-Monoscape is an open source, Mono Platform as a Service (PaaS) Cloud solution. It has a complete software stack for deploying and managing applications in the cloud with automatic load balancing and scaling features.
+Monoscape is an open source Platform as a Service (PaaS) cloud solution. It has a complete software stack for deploying and managing applications in the cloud with automatic load balancing, auto-scaling and monitoring features.
 
 Prerequisites
 --------------
